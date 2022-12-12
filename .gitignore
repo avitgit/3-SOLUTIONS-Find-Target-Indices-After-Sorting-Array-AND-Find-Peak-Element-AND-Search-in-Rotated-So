@@ -1,5 +1,5 @@
 # ALL SOLUTIONS
-#[2089. Find Target Indices After Sorting Array || 162. Find Peak Element || 
+#[2089. Find Target Indices After Sorting Array || 162. Find Peak Element || 33. Search in Rotated Sorted Array
 #Find Target Indices After Sorting Array
 class Solution:
     def targetIndices(self, nums: List[int], target: int) -> List[int]:
@@ -13,3 +13,10 @@ class Solution:
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
         return nums.index(max(nums))
+#Search in Rotated Sorted Array
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        if target in nums:
+            return nums.index(target)
+        else:
+            return -1 
